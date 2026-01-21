@@ -1,0 +1,124 @@
+/* --- SEU CSS ORIGINAL (SEM ALTERAÇÃO) --- */
+/* (mantive tudo exatamente como você enviou) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141421, #1f1f35);
+}
+
+.btn-default {
+    background: linear-gradient(135deg, #141421, #1f1f35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    gap: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,.1);
+}
+
+#form_container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #f6f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,.1);
+}
+
+#form_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form_title {
+    font-weight: 500;
+    position: relative;
+    font-size: 25px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#input_container {
+    display: grid;
+    gap: 24px;
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,.1);
+}
+
+.input-field i {
+    width: 30px;
+    text-align: center;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+.input-field:focus-within {
+    outline: 2px solid #6366f1;
+}
+
+/* --- MODAL DE SUCESSO --- */
+
+#success_overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#success_modal {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#success_modal i {
+    font-size: 48px;
+    color: #22c55e;
+}

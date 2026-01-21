@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/forms.css">
+
+    <title>Solicitação de Atualização</title>
+</head>
+<body>
+
+<main id="form_container">
+
+    <div id="form_header">
+        <h1 id="form_title">Solicitação de Atualização</h1>
+    </div>
+
+    <form id="form">
+
+        <div id="input_container">
+
+            <!-- NOME -->
+            <div class="input-box">
+                <label class="form-label">Nome</label>
+                <div class="input-field">
+                    <input type="text" id="nome" class="form-control" placeholder="Seu nome" required>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <!-- REGIÃO -->
+            <div class="input-box">
+                <label class="form-label">Setor / Região</label>
+                <div class="input-field">
+                    <select id="regiao" class="form-control" required>
+                        <option value="">Selecione</option>
+                        <option>Cascavel</option>
+                        <option>Florianópolis</option>
+                        <option>Ji-Paraná</option>
+                        <option>Manaus</option>
+                        <option>Porto Velho</option>
+                        <option>CIO Cascavel</option>
+                        <option>CIO Ji-Paraná</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- TIPO -->
+            <div class="input-box">
+                <label class="form-label">O que deseja atualizar?</label>
+                <div class="input-field">
+                    <select id="atualizacao" class="form-control" required>
+                        <option value="">Selecione</option>
+                        <option>Sistema</option>
+                        <option>Dashboard</option>
+                        <option>Permissões de acesso</option>
+                        <option>Correção de dados</option>
+                        <option>Layout / Interface</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- DESCRIÇÃO -->
+            <div class="input-box">
+                <label class="form-label">Descreva a solicitação</label>
+                <div class="input-field">
+                    <textarea id="descricao" class="form-control" rows="3" placeholder="Explique aqui..." required></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn-default">
+            <i class="fa-solid fa-check"></i>
+            Enviar solicitação
+        </button>
+
+    </form>
+
+</main>
+
+<!-- MODAL DE SUCESSO -->
+<div id="success_overlay">
+    <div id="success_modal">
+        <i class="fa-solid fa-circle-check"></i>
+        <p>Solicitação enviada com sucesso!</p>
+    </div>
+</div>
+
+<script src="js/forms.js"></script>
+</body>
+</html>

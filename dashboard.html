@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Monitriip</title>
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="/img/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <div class="header-right">
+            <div class="profile-wrapper">
+                <button class="profile-btn" onclick="toggleMenu()">
+                    <img src="https://img.freepik.com/vetores-premium/perfil-de-usuario-silhueta-masculina-em-circulo-conta-de-negocios-terno-avatar-padrao-silhueta-cinza-sem-foto-ilustracao-vetorial-simples_812892-1795.jpg"
+                        alt="Perfil">
+                </button>
+
+
+                <div class="profile-menu" id="profileMenu">
+                    <button onclick="logout()">Sair</button>
+                    <button onclick="solicitacao()" id="solicitacao">Solicitar Atualização</button>
+                    <button onclick="acessarAdmin()" id="adminBtn">Área Admin</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Celulares por Bases</h2>
+        <div class="dashboard" id="dashboard"></div>
+    </main>
+
+    <div class="table-container">
+        <table class="cidade-table">
+            <thead>
+                <tr>
+                    <th>Cidade</th>
+                    <th>Celular</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaCidades">
+                <tr>
+                    <td colspan="2">Carregando...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
