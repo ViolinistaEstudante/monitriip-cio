@@ -1,4 +1,0 @@
-API-CARREGAR-QUANTIDADE: https://script.google.com/macros/s/AKfycbzMKdCQLP1P6EyG3kuZiItfJmRNdlURTuIwV3erdCGfq80jJVPPm4hMdg3K5CnQZpHiIg/exec
-API-TABELA: https://script.google.com/macros/s/AKfycbx_NXKTbOyMlv9ckt6cCmBtm8J_uPmh4TOyWJ5-nzbaWNY1hO7DqVDAEk9-ZVxwNCKWOg/exec
-API-USUARIOS: https://script.google.com/macros/s/AKfycbwPdy3iYvN-qSTIw-Lp1UePWxR5640IVsXpRUTc4A8l_gRKZsjcr9AmpMdpHK1tCXqCGA/exec
-API-RESPOSTAS: https://script.google.com/macros/s/AKfycby-kFDmYIR2vbNuC7_ffh9GJUOrPnzuEmMwIHhS4ASXeOjk7tX3AYKOVATVlbIK_GI7/exec
