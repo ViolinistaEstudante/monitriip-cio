@@ -17,102 +17,106 @@ h2 {
   font-weight: 700;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #10101a;
-  padding: 14px 15px;
-  border-radius: 14px;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-}
-
-.logo {
-  height: 70px;
-}
-
-.profile-wrapper {
-  position: relative;
-}
-
-.profile-btn {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.profile-btn img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.profile-menu {
-  position: absolute;
-  right: 0;
-  top: 48px;
+/* Botão hamburguer */
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
   background: #1f1f35;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #10101a;
+  box-shadow: 5px 0 20px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+/* Ativa */
+.sidebar.active {
+  left: 0;
+}
+
+/* Header */
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar-logo {
+  width: 140px;
+}
+
+/* Menu */
+.sidebar-menu {
+  flex: 1;
+  padding: 10px;
+}
+
+.sidebar-menu button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 14px;
+  text-align: left;
+  cursor: pointer;
   border-radius: 10px;
-  padding: 6px;
-  display: none;
-  min-width: 120px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.45);
-}
-
-.profile-menu button {
-  width: 100%;
-  background: none;
-  border: none;
-  color: #fff;
-  padding: 10px;
-  text-align: left;
-  cursor: pointer;
-  border-radius: 8px;
   font-family: "Poppins";
+  margin-bottom: 6px;
 }
 
-.profile-menu button:hover {
+.sidebar-menu button:hover {
+  background: #1f2235;
+}
+
+/* Footer */
+.sidebar-footer {
+  padding: 15px;
+}
+
+.logout-btn {
+  width: 100%;
   background: #ff5252;
-}
-
-#solicitacao {
-  width: 100%;
-  background: none;
   border: none;
   color: #fff;
-  padding: 10px;
-  text-align: left;
+  padding: 14px;
+  border-radius: 10px;
   cursor: pointer;
-  border-radius: 8px;
   font-family: "Poppins";
 }
 
+.logout-btn:hover {
+  background: #e53935;
+}
+
+/* Mantém seus hovers personalizados */
 #solicitacao:hover {
   background: #fffb01;
   color: #000;
 }
 
-#adminBtn {
-  width: 100%;
-  background: none;
-  border: none;
-  color: #fff;
-  padding: 10px;
-  text-align: left;
-  cursor: pointer;
-  border-radius: 8px;
-  font-family: "Poppins";
-}
-
 #adminBtn:hover {
   background: #00bcd4;
-  color: #000;
+}
+
+#planilha:hover {
+  background: #4caf50;
 }
 
 .container {

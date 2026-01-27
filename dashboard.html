@@ -9,27 +9,24 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-left">
-            <img src="/img/logo.png" alt="Logo" class="logo">
+    <!-- Botão para abrir a sidebar (pode ficar no header) -->
+    <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="/img/logo.png" alt="Logo" class="sidebar-logo">
         </div>
 
-        <div class="header-right">
-            <div class="profile-wrapper">
-                <button class="profile-btn" onclick="toggleMenu()">
-                    <img src="https://img.freepik.com/vetores-premium/perfil-de-usuario-silhueta-masculina-em-circulo-conta-de-negocios-terno-avatar-padrao-silhueta-cinza-sem-foto-ilustracao-vetorial-simples_812892-1795.jpg"
-                        alt="Perfil">
-                </button>
+        <nav class="sidebar-menu">
+            <button onclick="acessarAdmin()" id="adminBtn">Área Admin</button>
+            <button onclick="acessarPlanilha()" id="planilha">Planilha de Acompanhamentos</button>
+            <button onclick="solicitacao()" id="solicitacao">Solicitar Atualização</button>
+        </nav>
 
-
-                <div class="profile-menu" id="profileMenu">
-                    <button onclick="logout()">Sair</button>
-                    <button onclick="solicitacao()" id="solicitacao">Solicitar Atualização</button>
-                    <button onclick="acessarAdmin()" id="adminBtn">Área Admin</button>
-                </div>
-            </div>
+        <div class="sidebar-footer">
+            <button class="logout-btn" onclick="logout()">Sair</button>
         </div>
-    </header>
+    </aside>
 
     <main class="container">
         <h2>Celulares por Bases</h2>
@@ -53,5 +50,9 @@
     </div>
 
     <script src="/js/dashboard.js"></script>
+    <footer class="foot">
+        <p><i>© 2025 Dashboard Monitriip - Todos os direitos reservados.</i></p>
+    </footer>
 </body>
+
 </html>

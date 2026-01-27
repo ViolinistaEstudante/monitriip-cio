@@ -31,7 +31,6 @@ function normalizarCidade(valor) {
     .trim();
 }
 
-
 function getUsuarioLogado() {
   const usuario = localStorage.getItem("usuarioLogado");
   return usuario ? usuario.trim().toUpperCase() : null;
@@ -220,5 +219,21 @@ function acessarAdmin() {
   }
 }
 
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
 
+/* Fecha clicando fora */
+document.addEventListener("click", function (e) {
+  const sidebar = document.getElementById("sidebar");
+  const toggle = document.querySelector(".sidebar-toggle");
+
+  if (!sidebar.contains(e.target) && !toggle.contains(e.target)) {
+    sidebar.classList.remove("active");
+  }
+});
+
+function planilha() {
+  window.open("https://docs.google.com/spreadsheets/d/1naemUOUtGOtZhUq27JM_N8QA37tr88-95IR_1ySMmHs/edit?usp=sharing", "_blank");
+}
 
